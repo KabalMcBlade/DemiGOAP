@@ -31,7 +31,7 @@ bool PlanNode::operator==(const PlanNode& _rhs) const
 int32_t PlanNode::FindIndexInOpenList(const std::vector<PlanNode>& _list) const
 {
 	auto it = std::find_if(std::begin(_list), std::end(_list), [&](const PlanNode & n) { return n.GetCurrentWorldState().EqualTo(GetCurrentWorldState()); });
-	int32_t index = std::distance(_list.begin(), it);
+	int32_t index = static_cast<int32_t>(std::distance(_list.begin(), it));
 	return index;
 }
 
