@@ -14,7 +14,8 @@ The demo is a simple console text base application, where I made a lumberjack.
 You have to select the number of iterations (working days) and the name of the lumberjack.
 Than the planner will starts: to show the A* behind working good with the planner, I have added oddities in the lumberjack test, such axe can be break or cannot be find, during the different working days.
 
-This is a screenshot: 
+This is a screenshot:
+
 <img src="./Screenshots/DemiGOAP.png">
 
 
