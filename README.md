@@ -30,4 +30,4 @@ This is a screenshot:
 
 | Platform | Build Status |
 |:--------:|:------------:|
-| Windows (Visual Studio 2017) | [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kabalmcblade/demigoap?branch=master&svg=true)](https://ci.appveyor.com/project/kabalmcblade/demigoap) |
+| Windows (Visual Studio 2019) | [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kabalmcblade/demigoap?branch=master&svg=true)](https://ci.appveyor.com/project/kabalmcblade/demigoap) |
