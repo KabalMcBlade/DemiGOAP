@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lumberjack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DemiGOAP\Action.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -45,12 +42,12 @@
     <ClInclude Include="DemiGOAP\WorldState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Test\Weaponsmith.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Lumberjack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DemiGOAP\Action.cpp">
@@ -63,6 +60,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DemiGOAP\WorldState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Weaponsmith.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

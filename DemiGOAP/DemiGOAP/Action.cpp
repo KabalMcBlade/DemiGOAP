@@ -3,7 +3,6 @@
 
 DEMIGOAP_NAMESPACE_BEGIN
 
-
 const std::string& Action::GetName() const
 {
 	return m_hash;

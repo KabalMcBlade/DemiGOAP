@@ -5,7 +5,9 @@ I named the project after the meaning of "Demi": it can means something is not "
 This because I spent more time writing the A* algorithim behind, because actually, a GOAP, is simple a pathfinding across nodes.<br/>
 Now, the current A* implemented is generic and it uses request made up of anything you want, in this case by world states and actions for the GOAP, but you can use for everything.<br/>
 The only thing you have to do is taking care to implement the functions the A* needs.<br/>
-Moreover, this GOAP implementation can work with floating cost instead of simple integer cost of the normal GOAP approach, because is A* strong based, this is interesting to have very specific balance.<br/>
+This GOAP implementation works with float costs instead of simple boolean cost of the normal GOAP approach, because is A* strong based, this is interesting to have very specific balance.<br/>
+In fact this approach floor the road toward a self balancing GOAP able to adjust the cost of the action based on the outcome of other actions on the gameplay side:<br/>
+The plan is computed, saction in gameplay taking times such 'smelting ore' hence, if something happens to the agent performing this very step planned, the cost is increased and the next time might plan another solution for the same goal.<br/>
 
 
 ## Demo
@@ -16,8 +18,7 @@ Than the planner will starts: to show the A* behind is working good with the pla
 
 This is a screenshot:
 
-<img src="./Screenshots/DemiGOAP.png">
-
+![DemiGOAP Sample](./Screenshots/DemiGOAPSample.gif)
 
 ## LICENSE
 

@@ -27,7 +27,6 @@ bool PlanNode::operator==(const PlanNode& _rhs) const
 	return m_currentWorldState.EqualTo(_rhs.GetCurrentWorldState());
 }
 
-
 int32_t PlanNode::FindIndexInOpenList(const std::vector<PlanNode>& _list) const
 {
 	auto it = std::find_if(std::begin(_list), std::end(_list), [&](const PlanNode & n) { return n.GetCurrentWorldState().EqualTo(GetCurrentWorldState()); });
@@ -46,7 +45,7 @@ bool PlanNode::IsInClosedList(const std::vector<PlanNode>& _list) const
 
 void PlanNode::GetNeighbors(const PlanRequest& _request, std::vector<PlanNode>& _neighbors) const
 {
-	for (const auto& action : _request.GetAction())
+	for (const auto& action : _request.GetActions())
 	{
 		if (action.CanComputeOn(m_currentWorldState))
 		{
@@ -64,8 +63,9 @@ bool PlanNode::IsGoal(const PlanRequest& _request, const PlanNode& _otherNode) c
 
 float PlanNode::ComputeCost(const PlanRequest& _request, const PlanNode& _otherNode) const
 {
-	float cost = 0.0f;
-	for (const auto& action : _request.GetAction())
+	float cost = m_actionLedHere != nullptr ? m_actionLedHere->GetCost() : 0.0f;
+		
+	for (const auto& action : _request.GetActions())
 	{
 		if (_otherNode.GetActionLedHere() == &action && action.CanComputeOn(_otherNode.GetCurrentWorldState()))
 		{

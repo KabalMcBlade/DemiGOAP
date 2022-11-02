@@ -110,7 +110,7 @@ public:
 				neighborNode.m_node = (*it);
 				neighborNode.m_parent = bestNodeClosedPoolIndex;
 
-				if (bestNode.m_parent != -1 && neighborNode == m_resultList[bestNode.m_parent])
+				if (bestNode.m_parent != -1 && neighborNode == m_resultList[neighborNode.m_parent])
 				{
 					continue;
 				}
@@ -147,6 +147,8 @@ public:
 					{
 						Node newNode = foundNode;
 						m_openList.erase(openIt);
+						newNode.m_node = neighborNode.m_node;
+						newNode.m_h = neighborNode.m_h;
 						newNode.m_g = neighborNode.m_g;
 						newNode.m_parent = bestNodeClosedPoolIndex;
 						PushInOpenList(newNode);

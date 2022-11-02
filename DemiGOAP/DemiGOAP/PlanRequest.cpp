@@ -1,10 +1,11 @@
 #include "PlanRequest.h"
 
+
 DEMIGOAP_NAMESPACE_BEGIN
 
-const Action* PlanRequest::GetAction(const HashedString& _name) const
+const Action* PlanRequest::GetAction(const uint32_t _id) const
 {
-	auto it = std::find_if(std::begin(m_actions), std::end(m_actions), [&](const Action & n) { return n.GetID() == _name; });
+	auto it = std::find_if(std::begin(m_actions), std::end(m_actions), [&](const Action& n) { return n.GetID() == _id; });
 
 	if (it == std::end(m_actions))
 	{
@@ -16,9 +17,9 @@ const Action* PlanRequest::GetAction(const HashedString& _name) const
 	}
 }
 
-Action* PlanRequest::GetAction(const HashedString& _name)
+Action* PlanRequest::GetAction(const uint32_t _id)
 {
-	auto it = std::find_if(std::begin(m_actions), std::end(m_actions), [&](const Action & n) { return n.GetID() == _name; });
+	auto it = std::find_if(std::begin(m_actions), std::end(m_actions), [&](const Action& n) { return n.GetID() == _id; });
 
 	if (it == std::end(m_actions))
 	{
@@ -46,6 +47,5 @@ float PlanRequest::GetMaxPathCost() const
 	// is possible put some linear constraint here
 	return FLT_MAX;
 }
-
 
 DEMIGOAP_NAMESPACE_END

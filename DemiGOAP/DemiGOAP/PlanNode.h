@@ -19,6 +19,7 @@ public:
 
 	//////////////////////////////////////////////////////////////////////////
 	// Required by A*
+	// This because is the node encapsulating the type of GOAP node that knows how to deal with
 	int32_t FindIndexInOpenList(const std::vector<PlanNode>& _list) const;
 	bool IsInClosedList(const std::vector<PlanNode>&) const;
 	void GetNeighbors(const PlanRequest& _request, std::vector<PlanNode>& _neighbors) const;
@@ -26,7 +27,7 @@ public:
 	float ComputeCost(const PlanRequest& _request, const PlanNode& _otherNode) const;
 	float EstimateCost(const PlanRequest& _request, const PlanNode& _otherNode) const;
 	//////////////////////////////////////////////////////////////////////////
-
+	
 	const uint32_t GetID() const;
 	const std::string& GetName() const;
 	bool operator==(const PlanNode& _rhs) const;
