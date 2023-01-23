@@ -33,6 +33,10 @@ namespace WeaponsmithDefines
 
 Weaponsmith::Weaponsmith(const std::string& _name) : m_name(_name)
 {
+	// BEGIN TEST PR
+	volatile int _uselessTest = 2;
+	// END TEST PR
+
 	// create actions
 	DemiGOAP::Action chopTree(WeaponsmithDefines::ACTION_ChopTree, 1.0f);
 	chopTree.SetEffect(WeaponsmithDefines::STATE_HasRawWood, true);
