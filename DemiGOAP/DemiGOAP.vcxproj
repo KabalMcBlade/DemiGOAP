@@ -177,6 +177,9 @@
     <ClCompile Include="DemiGOAP\PlanNode.cpp" />
     <ClCompile Include="DemiGOAP\WorldState.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="DemiGOAP.licenseheader" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
