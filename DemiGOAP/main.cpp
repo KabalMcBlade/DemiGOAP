@@ -1,3 +1,7 @@
+// Copyright (c) 2020-2025 Michele Condo'
+// File: C:\Projects\DemiGOAP\DemiGOAP\main.cpp
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
+
 // NanoGOAP.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 #include <iostream>

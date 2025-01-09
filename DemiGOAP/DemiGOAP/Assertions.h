@@ -1,3 +1,6 @@
+// Copyright (c) 2020-2025 Michele Condo'
+// File: C:\Projects\DemiGOAP\DemiGOAP\DemiGOAP\Assertions.h
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
 #pragma once
 
 #include <cstdio>

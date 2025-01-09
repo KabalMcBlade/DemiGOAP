@@ -1,3 +1,6 @@
+// Copyright (c) 2020-2025 Michele Condo'
+// File: C:\Projects\DemiGOAP\DemiGOAP\DemiGOAP\PlanNode.cpp
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
 #include "PlanNode.h"
 #include "PlanRequest.h"
 #include "Action.h"
