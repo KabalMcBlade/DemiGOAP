@@ -23,7 +23,7 @@ This is a screenshot:
 ## LICENSE
 
 - Sources:
-	- **DemiGOAP**, the main project, is under GPL-3.0
+	- **DemiGOAP**, the main project, is under MIT License
 
 
 # Build Status
